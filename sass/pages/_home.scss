@@ -1,0 +1,209 @@
+.clipboard {
+  margin-top: 8rem;
+  @include centerItem;
+
+  &__intro {
+    padding: 2rem;
+    text-align: center;
+
+    @media only screen and (min-width: $bp-mobile) and (max-width: $bp-tablet) {
+      margin: 0 auto;
+    }
+  }
+
+  &__main {
+    text-align: center;
+
+    @media only screen and (min-width: $bp-mobile) {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    &__head {
+      padding: 2rem;
+    }
+
+    &--image {
+      height: 25rem;
+      width: 30rem;
+
+      @media only screen and (min-width: $bp-mobile) {
+        transform: translate(-10%, 0);
+        height: 100%;
+        width: 100%;
+      }
+
+      @media only screen and (min-width: $bp-mobile) and (max-width: $bp-tablet) {
+        height: 80%;
+        width: 100%;
+        transform: translate(-10%, 0);
+      }
+    }
+  }
+
+  &__list {
+    padding: 2rem;
+
+    @media only screen and (min-width: $bp-mobile) {
+      display: flex;
+      flex-direction: column;
+      padding: 8rem 0;
+    }
+
+    @media only screen and (min-width: $bp-mobile) and (max-width: $bp-tablet) {
+      padding: 2rem 0;
+    }
+
+    &__item {
+      text-align: center;
+
+      @media only screen and (min-width: $bp-mobile) {
+        text-align: left;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 4rem;
+
+        @media only screen and (min-width: $bp-mobile) and (max-width: $bp-tablet) {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+}
+
+.access {
+  margin-top: 8rem;
+  @include centerItem;
+
+  &__intro {
+    padding: 2rem;
+    text-align: center;
+
+    @media only screen and (min-width: $bp-mobile) and (max-width: $bp-tablet) {
+      margin: 0 auto;
+    }
+
+    &--image {
+      width: 35rem;
+      margin-top: 2rem;
+
+      @media only screen and (min-width: $bp-mobile) {
+        width: 100%;
+        margin-top: 4rem;
+      }
+    }
+  }
+
+  &__heading {
+    text-align: center;
+
+    @media only screen and (min-width: $bp-mobile) and (max-width: $bp-tablet) {
+      margin: 0 auto;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__list {
+    padding: 1.5rem;
+
+    @media only screen and (min-width: $bp-mobile) {
+      padding: 2rem 0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media only screen and (min-width: $bp-mobile) and (max-width: $bp-tablet) {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__item {
+      text-align: center;
+
+      @media only screen and (min-width: $bp-mobile) {
+        text-align: center;
+        flex: 0 0 30%;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 4rem;
+
+        @media only screen and (min-width: $bp-mobile) and (max-width: $bp-tablet) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &--icon {
+    height: 2rem;
+
+    @media only screen and (min-width: $bp-mobile) {
+      height: 3rem;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.icons {
+  margin-top: 8rem;
+  @include centerItem;
+
+  @media only screen and (min-width: $bp-mobile) and (max-width: $bp-tablet) {
+    padding: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    width: 100%;
+  }
+
+  @media only screen and (min-width: $bp-mobile) {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  @media only screen and (min-width: $bp-mobile) and (max-width: $bp-tablet) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+
+  &__icon {
+    &:not(:last-child) {
+      padding: 3rem;
+
+      @media only screen and (min-width: $bp-mobile) and (max-width: $bp-tablet) {
+        padding: 1rem;
+      }
+    }
+  }
+}
+
+.download {
+  margin-top: 8rem;
+  @include centerItem;
+
+  @media only screen and (min-width: $bp-mobile) and (max-width: $bp-tablet) {
+    margin: 0 auto;
+  }
+
+  &__content {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (min-width: $bp-mobile) {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+}
