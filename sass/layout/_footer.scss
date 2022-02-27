@@ -65,6 +65,8 @@
 
     &__item {
       vertical-align: middle;
+      text-decoration: none;
+
       &:not(:last-child) {
         margin-right: 3rem;
       }
@@ -73,7 +75,6 @@
     &--icon {
       &:hover {
         fill: $color-green;
-        cursor: pointer;
       }
     }
   }

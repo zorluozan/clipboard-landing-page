@@ -6,10 +6,7 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 50%; }
-  @media only screen and (min-width: 48em) {
-    html {
-      font-size: 62.5%; } }
+  font-size: 62.5%; }
 
 body {
   box-sizing: border-box;
@@ -33,31 +30,36 @@ body {
       line-height: 2; } }
 
 .paragraph-primary {
-  font-size: 1.8rem;
+  font-size: 2.1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #9fabb2;
   margin: 4rem; }
+  @media only screen and (min-width: 48em) {
+    .paragraph-primary {
+      font-size: 1.8rem; } }
 
 .paragraph-secondary {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 400;
   line-height: 1.2;
   color: #9fabb2;
   margin: 2rem; }
   @media only screen and (min-width: 48em) {
     .paragraph-secondary {
-      margin: 1rem 0; } }
+      margin: 1rem 0;
+      font-size: 1.5rem; } }
 
 .paragraph-tertiary {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.6;
   color: #9fabb2;
   margin: 2rem; }
   @media only screen and (min-width: 48em) {
     .paragraph-tertiary {
-      line-height: 1.8; } }
+      line-height: 1.8;
+      font-size: 1.5rem; } }
 
 .btn {
   font-size: 1.8rem;
@@ -132,12 +134,12 @@ body {
         display: flex;
         align-items: center; } }
     .footer__social__item {
-      vertical-align: middle; }
+      vertical-align: middle;
+      text-decoration: none; }
       .footer__social__item:not(:last-child) {
         margin-right: 3rem; }
     .footer__social--icon:hover {
-      fill: #26baa4;
-      cursor: pointer; }
+      fill: #26baa4; }
 
 .header {
   display: flex;

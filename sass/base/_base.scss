@@ -7,11 +7,7 @@
 }
 
 html {
-  font-size: 50%;
-
-  @media only screen and (min-width: $bp-mobile) {
-    font-size: 62.5%;
-  }
+  font-size: 62.5%;
 }
 
 body {
